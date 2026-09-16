@@ -1,0 +1,15 @@
+{
+  "name": "mh-tour-token-server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "livekit-server-sdk": "^2.19.0",
+    "ipaddr.js": "^2.2.0"
+  }
+}

@@ -1,0 +1,13 @@
+
+# Optional signing properties supplied by GitHub Actions:
+# -PMH_KEYSTORE_FILE=/path/to/mh-tour-release.jks
+# -PMH_KEYSTORE_PASSWORD=...
+# -PMH_KEY_ALIAS=...
+# -PMH_KEY_PASSWORD=...
+
+def mhKeystoreFile = project.findProperty("MH_KEYSTORE_FILE")
+def mhKeystorePassword = project.findProperty("MH_KEYSTORE_PASSWORD")
+def mhKeyAlias = project.findProperty("MH_KEY_ALIAS")
+def mhKeyPassword = project.findProperty("MH_KEY_PASSWORD")
+
+In app/build.gradle, place this inside android { } and set signingConfig signingConfigs.release in buildTypes.release.
